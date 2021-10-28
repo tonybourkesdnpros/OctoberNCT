@@ -1,0 +1,26 @@
+---
+- name: Configure CloudVision
+  hosts: CloudVision
+  connection: local
+  gather_facts: no
+  vars: 
+    path: "{{lookup('env','PWD')}}"
+  vars_files: 
+     - ../vars/test.yml
+   
+  tasks:
+    - name: Upload Configlets for OSPF Underlay
+      arista.cvp.cv_configlet_v3:
+        configlets: "{{ CVP_CONFIGLETS_TEST }}"
+        state: present 
+    
+
+    # - name: "Build Container topology"
+    #   arista.cvp.cv_container_v3:
+    #     topology: "{{CONTAINERS_OSPF}}"
+    #     apply_mode: strict
+
+    # - name: "Apply configlets"
+    #   arista.cvp.cv_device_v3:
+    #     devices: "{{ CVP_DEVICES_OSPF }}"
+    #     apply_mode: strict

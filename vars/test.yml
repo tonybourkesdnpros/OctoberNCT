@@ -1,0 +1,13 @@
+CVP_CONFIGLETS_TEST:
+  tony-alias: "{{lookup('file','{{path}}/configlets/alias.cfg')}}"
+  
+  
+
+CONTAINERS_TEST:
+ 
+CVP_DEVICES_TEST:
+  - fqdn: 'leaf1-DC1'
+    parentContainerName: 'Left-DC1'
+    configlets:
+      - 'ATD-INFRA'
+      - 'leaf1-DC1-BASE'
