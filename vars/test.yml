@@ -11,3 +11,4 @@ CVP_DEVICES_TEST:
     configlets:
       - 'ATD-INFRA'
       - 'leaf1-DC1-BASE'
+      - 'tony-alias'
