@@ -20,7 +20,7 @@
     #     topology: "{{CONTAINERS_OSPF}}"
     #     apply_mode: strict
 
-    # - name: "Apply configlets"
-    #   arista.cvp.cv_device_v3:
-    #     devices: "{{ CVP_DEVICES_OSPF }}"
-    #     apply_mode: strict
+    - name: "Apply configlets"
+      arista.cvp.cv_device_v3:
+        devices: "{{ CVP_DEVICES_TEST }}"
+        apply_mode: strict
