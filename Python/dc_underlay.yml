@@ -33,7 +33,7 @@ spine1:
       mask: 31
   BGP:
     ASN: 65100
-spine:
+spine2:
   interfaces:
     loopback0: 
       ipv4: 192.168.101.102
@@ -63,22 +63,22 @@ spine3:
     loopback0: 
       ipv4: 192.168.101.103
       mask: 32
-    Ethernet2: 
+    Ethernet1: 
       ipv4: 192.168.103.5
       mask: 31
-    Ethernet3: 
+    Ethernet2: 
       ipv4: 192.168.103.11
       mask: 31
-    Ethernet4: 
+    Ethernet3: 
       ipv4: 192.168.103.17
       mask: 31
-    Ethernet5: 
+    Ethernet4: 
       ipv4: 192.168.103.23
       mask: 31
-    Ethernet6: 
+    Ethernet5: 
       ipv4: 192.168.103.29
       mask: 31
-    Ethernet7: 
+    Ethernet6: 
       ipv4: 192.168.103.35
       mask: 31
   BGP:
